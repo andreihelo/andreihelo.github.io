@@ -63,25 +63,43 @@ header {
 
 #logo {
   float: left;
-  width: 350px;
-  padding: 40px 0 0 50px;
+  width: 600px;
+  padding: 40px 0 0 40px;
   text-transform: uppercase;
+}
+
+#logo img {
+  float: left;
+  margin-right: 10px;
 }
 
 #logo h1 {
   padding: 5px 10px 0 0;
+  float: left;
+  vertical-align: middle;
+  color: #545454;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
 }
 
-#logo h1 a {
+#logo h1 span {
+  color: #FFF;
+}
+
+#logo a {
   text-decoration: none;
   font-size: 1.5em;
   font-weight: 300;
   color: #FFF;
 }
 
+.zombie {
+  font-size: 2em;
+  font-family: 'Zombie', sans-serif;
+}
+
 nav {
   float: right;
-  width: 700px;
+  width: 400px;
   padding: 60px 50px 0 0;
 }
 
