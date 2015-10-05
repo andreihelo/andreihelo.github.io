@@ -1,7 +1,11 @@
+/* ------------------------------
+
+Estilo básico
+
+------------------------------ */
 html, body {
   height: 100%;
 }
-
 body {
   margin: 0;
   padding: 0;
@@ -10,43 +14,36 @@ body {
   font-size: 15px;
   color: #545454;
 }
-
 h1, h2, h3 {
   margin: 0;
   padding: 0;
   text-transform: uppercase;
   font-weight: 500;
 }
-
 h2 {
   padding: 0 0 20px 0;
   font-size: 1.50em;
 }
-
 p, ul {
   margin-top: 0;
 }
-
 p {
   line-height: 180%;
 }
-
-#main > p {
-  text-align: justify;
-}
-
 strong {
   color: #2C2C2C;
 }
-
 a {
   color: #2C2C2C;
 }
-
 a:hover {
   text-decoration: none;
 }
+/* ------------------------------
 
+Contenido principal
+
+------------------------------ */
 #wrapper {
   overflow: hidden;
   width: 1200px;
@@ -54,25 +51,24 @@ a:hover {
   margin: 50px auto;
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
 }
-
 header {
   overflow: hidden;
   height: 150px;
   background-color: #E6AD00;
 }
-
 #logo {
   float: left;
   width: 600px;
   padding: 40px 0 0 40px;
   text-transform: uppercase;
 }
-
 #logo img {
   float: left;
   margin-right: 10px;
 }
-
+#main > p {
+  text-align: justify;
+}
 #logo h1 {
   padding: 5px 10px 0 0;
   float: left;
@@ -80,29 +76,24 @@ header {
   color: #545454;
   text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
 }
-
 #logo h1 span {
   color: #FFF;
 }
-
 #logo a {
   text-decoration: none;
   font-size: 1.5em;
   font-weight: 300;
   color: #FFF;
 }
-
 .zombie {
-  font-size: 2em;
+  font-size: 4em;
   font-family: 'Zombie', sans-serif;
 }
-
 nav {
   float: right;
   width: 400px;
   padding: 60px 50px 0 0;
 }
-
 nav ul {
   float: right;
   margin: 0;
@@ -110,11 +101,9 @@ nav ul {
   list-style: none;
   line-height: normal;
 }
-
 nav li {
   float: left;
 }
-
 nav a {
   display: block;
   margin-left: 1px;
@@ -127,7 +116,6 @@ nav a {
   font-weight: 300;
   color: #FFF;
 }
-
 #page {
   overflow: hidden;
   width: 1100px;
@@ -135,122 +123,103 @@ nav a {
   padding: 50px 0;
   border-bottom: 1px solid #DEDEDE;
 }
-
 #main {
   float: left;
   width: 750px;
 }
-
 #main h2 {
   font-size: 2.1em;
 }
-
 aside {
   float: right;
   width: 300px;
 }
-
 footer {
   overflow: hidden;
   margin: 0 50px;
   padding: 30px 0;
   border-top: 5px solid #000;
 }
-
 footer p {
   text-align: center;
 }
-
 footer a {
   color: #545454;
 }
-
 #three-columns {
   overflow: hidden;
   margin: 0 50px;
   padding: 50px 0;
 }
-
 #three-columns #one {
   float: left;
   width: 300px;
   margin-right: 50px;
 }
-
 #three-columns #one img:first-child {
   width: 300px;
   height: 150px;
 }
-
 #three-columns #two {
   float: left;
   width: 400px;
 }
-
 #three-columns #three {
   float: right;
   width: 300px;
 }
-
 ul.style-1 {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-
 ul.style-1 li {
   padding: 25px 0 15px 0;
   border-top: 1px solid #DEDEDE;
 }
-
 ul.style-1 li:first-child {
   padding-top: 0;
   border-top: none;
 }
-
 ul.style-1 h3 {
   padding: 0 0 10px 0;
 }
-
 ul.style-1 h3 a {
   text-transform: none;
   color: #373737;
 }
-
 ul.style-1 a {
   text-decoration: none;
   color: #919191;
 }
-
 ul.style-1 a:hover {
   text-decoration: underline;
 }
-
 ul.style-2 {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-
 ul.style-2 li {
   padding: 10px 0 15px 0;
   border-top: 1px solid #DEDEDE;
 }
-
 ul.style-2 li:first-child {
   padding-top: 0;
   border-top: none;
 }
-
 ul.style-2 a {
   text-decoration: none;
   color: #545454;
 }
-
 ul.style-2 a:hover {
   text-decoration: underline;
 }
+/* ------------------------------
 
+Estilos específicos
+
+------------------------------ */
 .button-style {
   display: inline-block;
   margin-top: 20px;
@@ -261,13 +230,120 @@ ul.style-2 a:hover {
   text-transform: uppercase;
   color: #FFF;
 }
-
 img.rounded {
   border-radius: 50%;
 }
-
 #bio-image {
   float: left;
   margin-right: 30px;
   margin-bottom: 20px;
+}
+/* ------------------------------
+
+Formulario
+
+------------------------------ */
+.custom-form {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.custom-form::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.custom-form fieldset {
+  margin: 24px 0;
+}
+.custom-form legend {
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ECF0F1;
+}
+.custom-form .custom-label {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  display: block;
+  margin-top: 10px;
+}
+.custom-form input,
+.custom-form textarea,
+.custom-form select,
+.custom-form label {
+  font-size: 1.6rem;
+  color: #2B3E51;
+}
+.custom-form input[type="text"],
+.custom-form input[type="email"],
+.custom-form textarea,
+.custom-form select,
+.custom-form legend {
+  display: block;
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+.custom-form  input[type="text"],
+.custom-form input[type="email"],
+.custom-form textarea,
+.custom-form select {
+  /* general style for input elements */
+  padding: 12px;
+  border: 1px solid #DEDEDE;
+  background-color: #FFF;
+  border-radius: .25em;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08);
+  width: 95.5%;
+}
+.custom-form input[type="text"]:focus,
+.custom-form input[type="email"]:focus,
+.custom-form textarea:focus,
+.custom-form select:focus {
+  outline: none;
+  border-color: #E6AD00;
+  box-shadow: 0 0 5px rgba(44, 151, 222, 0.2);
+}
+.custom-form textarea {
+  min-height: 200px;
+  resize: vertical;
+  overflow: auto;
+}
+.custom-form input[type="submit"] {
+  /* button style */
+  border: none;
+  background: #E8B51C;
+  padding: 7px 20px;
+  color: #FFF;
+  float: right;
+  cursor: pointer;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  margin-top: 20px;
+  font-family: 'Dosis', sans-serif;
+}
+.custom-form input[type="submit"]:hover {
+  background: #545454;
+}
+.custom-form input[type="submit"]:focus {
+  outline: none;
+  background: #2B3E51;
+}
+.custom-form input[type="submit"]:active {
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transform: scale(0.9);
 }

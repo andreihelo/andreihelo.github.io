@@ -2,12 +2,12 @@
 <html>
 <head>
   <meta charset="utf-8" />
-  <title>ZOMBIE! GEEK | Contacto</title>
-  <!--link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700" /-->
+  <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/dosis.css" />
   <link rel="stylesheet" href="css/zombie.css" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/font-awesome-4.0.2/css/font-awesome.min.css" />
+  <title>ZOMBIE! GEEK | Contacto</title>
 </head>
 <body>
   <div id="wrapper">
@@ -28,74 +28,20 @@
       </nav>
     </header>
     <section id="page">
-      <article id="main">
-        <h2>¿Qué son las redes sociales?</h2>
-        <p><img src="images/img01.jpg" alt="Facebook" /></p>
-        <p>
-          Las <strong>redes sociales</strong>, han cambiado nuestra forma de
-          vida. Tenemos a <a href="http://www.facebook.com">Facebook</a> por
-          ejemplo, la cual ha cautivado a millones de personas alrededor del
-          mundo, incluyendo niños, jóvenes y adultos.
-        </p>
-        <p>
-          Las redes sociales de internet permiten a las personas estar
-          conectadas con sus amigos, incluso realizar nuevas amistades, a fin de
-          compartir contenidos, interactuar, crear comunidades sobre intereses
-          similares: trabajo, lecturas, juegos, amistad, relaciones
-          interpersonales.
-        </p>
-        <p>
-          Ha sido tanto su impacto que han convertido en promisorios negocios
-          para empresas, artistas, marcas, profesionales independientes y, sobre
-          todo, en lugares para encuentros humanos, es decir, conjuntos de
-          personas con un interés en común, manejando dos tipos de
-          comunicaciones asíncronas y sincronías.
-        </p>
-        <p>
-          ... no queda más que decir que continuarán modificando nuestra
-          existencia... pero ¿hasta cuando? o ¿a que grado?... esto solo lo
-          sabremos en algunos años más.
-        </p>
-      </article><!-- main -->
-      <aside>
-        <h2>Más contenido:</h2>
-        <ul class="style-1">
-          <li>
-            <h3><a href="#">Lenguajes de Programación</a></h3>
-            <p>
-              <a href="#">
-                Los lenguajes más utilizados en el sector privado dedicado al
-                desarrollo de software son...
-              </a>
-            </p>
-          </li>
-          <li>
-            <h3><a href="#">DBMS</a></h3>
-            <p>
-              <a href="#">
-                Toda aplicación, o al menos las utilizadas en empresas,
-                requieren persistencia en sus datos...
-              </a>
-            </p>
-          </li>
-          <li>
-            <h3><a href="#">Webapps</a></h3>
-            <p>
-              <a href="#">Qué son y por qué están invadiendo el mercado?</a>
-            </p>
-          </li>
-          <li>
-            <h3><a href="#">Aplicaciones Móviles</a></h3>
-            <p>
-              <a href="#">
-                El complemento perfecto para cualquier sistema web. Imagine
-                incrementar el potencial de su empresa en la palma de su mano...
-              </a>
-            </p>
-          </li>
-        </ul>
-        <p><a href="#" class="button-style">Leer más</a></p>
-      </aside>
+      <form class="custom-form" action="mailto:ahelo@uach.mx?Subject=Contacto">
+        <fieldset>
+          <legend>Contacto</legend>
+          <label class="custom-label" for="name">Nombre</label>
+          <input type="text" id="name" name="name" />
+          <label class="custom-label" for="company">Compañía</label>
+          <input type="text" id="company" name="company" />
+          <label class="custom-label" for="email">Correo</label>
+          <input type="email" id="email" name="email" />
+          <label class="custom-label" for="message">Mensaje</label>
+          <textarea id="message" name="message" rows="8" cols="40"></textarea>
+          <input type="submit" value="Enviar" class="button-style"/>
+        </fieldset>
+      </form>
     </section><!-- page -->
     <section id="three-columns">
       <article id="one">
